@@ -54,6 +54,7 @@ function Profile() {
         <button className="btn btn-wide bg-gray-300 ">Submit</button>
         </div>
       </div>
+      
     </>
   );
 }
