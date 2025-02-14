@@ -15,8 +15,8 @@ function Profile() {
         </div>
 
         {/* Navbar with gradient background */}
-        <div className="navbar bg-gradient-to-r from-pink-500 to-blue-500 rounded-t-lg h-20 px-6 flex flex-col justify-center text-white">
-          <h1 className="text-xl md:text-2xl font-bold ">Personal Details</h1>
+        <div className="navbar bg-gradient-to-r from-pink-500 to-blue-500 rounded-t-lg h-20 px-6 flex flex-col items-start text-white">
+          <h1 className="text-xl md:text-2xl font-bold">Personal Details</h1>
           <h2 className="text-sm md:text-base">
             Make changes to your Profile Account here.{" "}
             <span className="text-red-500 font-bold">Click save when you're done.</span>
@@ -32,7 +32,7 @@ function Profile() {
           </div>
 
           <div className="flex gap-6">
-            <ProfileInputs item1={"Email *"} className="flex-1" />
+            <ProfileInputs item1={"Email *"} className="flex-1" /> 
             <ProfileInputs item1={"Phone *"} className="flex-1" />
           </div>
 

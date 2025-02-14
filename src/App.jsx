@@ -6,13 +6,14 @@ import Dashboard from './Home/Dashboard'
 import Profile from './Home/Profile'
 import UserDashboard from './UserInterface/UserDashboard'
 import UserAccount from './UserInterface/UserAccount'
+import ProfileInputs from './HomeReusableComponent/ProfileInputes'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-  <Dashboard></Dashboard>
+     <Dashboard />
     </>
   )
 }

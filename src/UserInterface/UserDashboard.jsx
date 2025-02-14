@@ -5,6 +5,7 @@ import { FaFile } from "react-icons/fa";
 import { FaFileAlt } from "react-icons/fa";
 import { useState } from "react";
 import UserDashboardOPtion from "../USerInterfaceReuseableComponent/UserDashbordOPtions";
+import UserAccount from "./UserAccount";
 
 function UserDashboard() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -26,7 +27,8 @@ function UserDashboard() {
               ☰ Open Drawer
             </label>
 
-            {/* Profile Form */}
+            {/* USerAccount Form */}
+              <UserAccount />
           </div>
 
           {/* Sidebar Drawer */}
@@ -41,8 +43,7 @@ function UserDashboard() {
                 <AiFillAppstore /> Dashboard
               </li>
               <UserDashboardOPtion />
-              <UserDashboardOPtion />
-              <UserDashboardOPtion />
+              
             </ul>
           </div>
         </div>

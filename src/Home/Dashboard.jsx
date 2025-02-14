@@ -4,6 +4,7 @@ import { RiInbox2Fill } from "react-icons/ri";
 import { FaFile } from "react-icons/fa";
 import { FaFileAlt } from "react-icons/fa";
 import Profile from "./Profile";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
@@ -20,14 +21,14 @@ function Dashboard() {
           </label>
 
           {/* Profile Form */}
-          <Profile />
+          <Profile></Profile>
         </div>
 
         {/* Sidebar Drawer */}
         <div className="drawer-side mr-4">
           <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
           <ul className="menu w-80 min-h-full bg-base-100 p-4 text-lg font-semibold space-y-4">
-            <li><a><AiFillAppstore /> Dashboard</a></li>
+            <li><Link to={"/UserAccount"}><AiFillAppstore /> Dashboard</Link></li>
             <li><a><CgProfile /> Profile</a></li>
             <li><a><RiInbox2Fill /> Inbox</a></li>
             <li><a><FaFile /> My Jobs</a></li>
